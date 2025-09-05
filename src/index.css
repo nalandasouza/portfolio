@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+:root {
+  /*--background: #151a28cc;
+  --text-contrast: #9b87f5;
+  --text-white: #d1d5db;
+  --text: #d7deef;
+  --hover: #FFD0FF;*/
+
+  /* --surface: #151A28CC;
+  --on-surface: #D7DEEF;
+  --on-surface-variant: #D7DEEFCC;
+  --surface-container: #1C2338;
+  --accent: #9B87F5;
+  --on-accent: #190057;
+  --secondary: #cac3dc;
+  --on-secondary: #322e41; */
+
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lexend", sans-serif;
+  background-color: var(--surface);
+  color: var(--on-surface);
+  /* transition: background-color 150ms ease, color 150ms ease; */
+}
+
+a {
+  transition: all 200ms ease-in-out;
+  &:hover {
+    color: var(--accent);
+  }
+}
+
+body.dark {
+  --surface: #151a28cc;
+  --on-surface: #d7deef;
+  --on-surface-variant: #d7deefcc;
+  --surface-container: #1c2338;
+  --accent: #9b87f5;
+  --on-accent: #190057;
+  --secondary: #cac3dc;
+  --on-secondary: #322e41;
+  --border-divider: #ffffff1a;
+
+  color-scheme: dark;
+}
+
+body.light {
+  --surface: #fdf8ff;
+  --on-surface: #1c1b20;
+  --on-surface-variant: #48454e;
+  --surface-container: #f7f2fa;
+  --accent: #615690;
+  --on-accent: #ffffff;
+  --secondary: #e6dff9;
+  --on-secondary: #484458;
+  --border-divider: #0000001a;
+
+  color-scheme: light;
+}
+
+.theme-toggle {
+  display: flex;
+  background: none;
+  border: none;
+  color: var(--accent);
+  /* border-radius: 32px; */
+  cursor: pointer;
+  transition: 0.3s;
+}

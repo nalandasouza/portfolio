@@ -1,0 +1,45 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 16rem; */
+  /* max-width: 70%; */
+  margin: 0 auto;
+  /* gap: 10rem; */
+}
+
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  gap: 12px;
+  transition: ease-in-out 250ms;
+
+  &:active {
+    transform: translateY(2px) scale(0.96);
+  }
+}
+
+.btn_filled {
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: var(--on-accent);
+
+  &:hover {
+    background-color: transparent;
+    color: var(--accent);
+  }
+}
+
+.btn_outlined {
+  border: 1px solid var(--accent);
+  background-color: transparent;
+  color: var(--accent);
+
+  &:hover {
+    background-color: var(--accent);
+    color: var(--on-accent);
+  }
+}

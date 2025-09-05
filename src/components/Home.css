@@ -1,0 +1,257 @@
+.about {
+  width: 100%;
+  max-width: 1250px;
+  height: 95vh;
+  margin: 0 auto;
+  padding-top: 4rem;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  line-height: 1.6;
+  gap: 4rem;
+
+  & .media-texts,
+  .media-p,
+  .media-sub {
+    display: none;
+  }
+
+  & .texts {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    & h1 {
+      font-size: 36px;
+      line-height: 36px;
+      min-height: 36px;
+      color: var(--on-surface);
+
+      & span {
+        color: var(--accent);
+      }
+    }
+
+    & p {
+      /* margin-top: 1.5rem; */
+      color: var(--on-surface-variant);
+      font-size: 18px;
+      max-width: 95%;
+    }
+
+    & .buttons {
+      display: flex;
+      /* margin-top: 16px; */
+      gap: 16px;
+    }
+  }
+
+  & .profile {
+    position: relative;
+
+    & .circle {
+      filter: blur(1px);
+    }
+
+    & img {
+      height: 260px;
+      width: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      z-index: 2;
+      position: relative;
+      /* border: 2px solid var(--accent); */
+      background-color: var(--accent);
+    }
+
+    & .links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 36px;
+      gap: 32px;
+
+      & a {
+        color: var(--on-surface-variant);
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          color: var(--accent);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .about {
+    padding: calc(3rem + 92px) 2rem 0;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .about {
+    height: auto;
+    padding: calc(5rem + 92px) 2rem 5rem;
+
+    & .texts,
+    .tab-inv {
+      display: none;
+    }
+
+    & .media-texts,
+    .media-p,
+    .media-sub {
+      display: block;
+    }
+
+    & .media-home {
+      /* height: auto; */
+      display: flex;
+      flex-direction: column;
+      /* gap: 3rem; */
+
+      & .profile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 6rem;
+
+        & .one {
+          display: none;
+        }
+
+        & .media-texts {
+          display: flex;
+          flex-direction: column;
+          /* align-items: center; */
+          text-align: center;
+          width: 100%;
+
+          & h1.typewriter {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 3rem;
+            min-height: calc(2 * 40px);
+
+            & span {
+              color: var(--accent);
+            }
+          }
+
+          & .buttons {
+            & .btn {
+              justify-content: center;
+              padding: 16px;
+            }
+
+            & .btn_outlined {
+              margin-bottom: 24px;
+            }
+          }
+        }
+
+        & img {
+          border: none;
+        }
+
+        & .links {
+          margin-top: 24px;
+          gap: 28px;
+        }
+      }
+
+      & .media-card {
+        margin-top: 3rem;
+        padding: 1.5rem;
+        border-radius: 24px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 12px;
+
+        & .media-sub {
+          font-size: 22px;
+          text-align: center;
+        }
+
+        & .media-p {
+          font-size: 18px;
+          line-height: 1.5;
+          text-align: center;
+          margin-top: 1rem;
+          color: var(--on-surface-variant);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .about {
+    padding: calc(3rem + 71px) 1.5rem 3rem;
+
+    & .media-home {
+      gap: 1rem;
+
+      & .mob-inv {
+        display: none;
+      }
+
+      & .profile {
+        justify-content: center;
+
+        & .media-texts {
+          align-items: center;
+          gap: 2rem;
+
+          & h1.typewriter {
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 0;
+            min-height: calc(2 * 36px);
+          }
+
+          & .tab-inv {
+            height: 230px;
+            width: 230px;
+          }
+
+          & .buttons {
+            width: 100%;
+            padding: 0 1rem;
+          }
+
+          & .tab-inv {
+            display: block;
+          }
+        }
+      }
+
+      & .media-card {
+        & .media-sub {
+          font-size: 22px;
+        }
+
+        & .media-p {
+          font-size: 16px;
+          line-height: 1.6;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .about {
+    & .media-home {
+      & .profile {
+        & .media-texts {
+          & h1.typewriter {
+            font-size: 28px;
+            line-height: 30px;
+            min-height: calc(2 * 30px);
+          }
+        }
+      }
+    }
+  }
+}
