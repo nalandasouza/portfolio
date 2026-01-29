@@ -10,10 +10,10 @@ O site foi construído com foco em **performance, usabilidade e design responsiv
 ## ✨ Destaques  
 ✔️ **Tema escuro e claro** com persistência no `localStorage`  
 ✔️ **Animações de entrada** utilizando **ScrollReveal**  
-✔️ **Efeito máquina de escrever (typewriter)** para destaque do nome
+✔️ **Efeito máquina de escrever (typewriter)** para destaque do nome  
 ✔️ **Design responsivo** (mobile-first, adaptado a diferentes telas)  
 ✔️ **SEO otimizado** com sitemap, robots.txt, Open Graph e Twitter Card  
-✔️ **Código organizado** em componentes reutilizáveis
+✔️ **Código organizado** em componentes reutilizáveis  
 ✔️ **UI/UX profissional**: navegação intuitiva e foco em experiência do usuário
 
 ---
@@ -24,7 +24,7 @@ O site foi construído com foco em **performance, usabilidade e design responsiv
 - **HTML5 & CSS3** (com uso de variáveis de tema e responsividade)  
 - **ScrollReveal.js** (animações de entrada)  
 - **Lucide Icons** (ícones modernos e leves)  
-- **React Awesome Shapes** (elementos visuais decorativos)
+- **React Awesome Shapes** (elementos visuais decorativos)  
 - **AWS (Amazon Web Services)** – hospedagem do build de produção, garantindo escalabilidade e confiabilidade
 
 ---
